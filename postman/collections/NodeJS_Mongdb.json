@@ -1,0 +1,207 @@
+{
+	"info": {
+		"_postman_id": "3b241f94-e665-4fa8-ba30-80743f57d8e1",
+		"name": "NodeJS_Mongdb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "25409674-3b241f94-e665-4fa8-ba30-80743f57d8e1"
+	},
+	"item": [
+		{
+			"name": "ListNFLPlayer_by_ID",
+			"id": "5308369e-5f35-441a-807a-51a1b33b708b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Player_Name\":\"Aaron Jones\",\n\"Team\":\"GB\",\n\"Rushing_Yards\": 1121,\n\"Touchdowns_thrown\": 5,\n\"Sacks\": 0,\n\"Field_goal\": 52,\n\"Catches\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/nfl/63e6cc5c72347f27b991c461",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"nfl",
+						"63e6cc5c72347f27b991c461"
+					]
+				},
+				"description": "List all the Players"
+			},
+			"response": []
+		},
+		{
+			"name": "ListNFLPlayer",
+			"id": "03e870b8-8e58-43dc-83fa-721b563c253e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Player_Name\":\"Aaron Jones\",\n\"Team\":\"GB\",\n\"Rushing_Yards\": 1121,\n\"Touchdowns_thrown\": 5,\n\"Sacks\": 0,\n\"Field_goal\": 52,\n\"Catches\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/nfl",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"nfl"
+					]
+				},
+				"description": "List all the Players"
+			},
+			"response": []
+		},
+		{
+			"name": "AddNFLPlayer",
+			"id": "8f0d991a-37eb-4ae6-8bfd-8f8fcd376f6e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Player_Name\":\"Saquon Barkley'\",\n\"Team\":\"NYG\",\n\"Rushing_Yards\": 1621,\n\"Touchdowns_thrown\": 51,\n\"Sacks\": 10,\n\"Field_goal\": 62,\n\"Catches\": 15\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/nfl",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"nfl"
+					]
+				},
+				"description": "List all the Players"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteNFLPlayer",
+			"id": "8cffcd6a-fc28-40d6-8caf-ea57f5972fbe",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Player_Name\":\"Aaron Jones\",\n\"Team\":\"GB\",\n\"Rushing_Yards\": 1121,\n\"Touchdowns_thrown\": 5,\n\"Sacks\": 0,\n\"Field_goal\": 52,\n\"Catches\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/nfl/63e6cd8e72347f27b991c463",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"nfl",
+						"63e6cd8e72347f27b991c463"
+					]
+				},
+				"description": "List all the Players"
+			},
+			"response": []
+		},
+		{
+			"name": "Find_Update_PlayerDetails_By_Id",
+			"id": "bc203c50-7c1e-474e-99d4-3112e4e40469",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Player_Name\":\"Miles Sanders\",\n\"Team\":\"PHI\",\n\"Rushing_Yards\": 2100,\n\"Touchdowns_thrown\": 18,\n\"Sacks\": 51,\n\"Field_goal\": 15,\n\"Catches\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/nfl/63e6cc5c72347f27b991c461",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"nfl",
+						"63e6cc5c72347f27b991c461"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
